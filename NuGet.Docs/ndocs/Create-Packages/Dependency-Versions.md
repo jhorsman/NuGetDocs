@@ -47,7 +47,7 @@ NuGet supports using interval notation for specifying version ranges, summarized
     </tr>
     <tr>
         <td>(1.0,)</td>
-        <td>1.0 < x</td>
+        <td>1.0 < x </td>
         <td>Mininum version, exclusive</td>
     </tr>
     <tr>
@@ -127,14 +127,14 @@ When obtaining packages from a repository during install, reinstall, or restore 
 
 - Leading zeroes are removed from version numbers:
 
-    1.00 is treated as 1.0
-    1.01.1 is treated as 1.1.1
-    1.00.0.1 is treated as 1.0.0.1
+    - 1.00 is treated as 1.0
+    - 1.01.1 is treated as 1.1.1
+    - 1.00.0.1 is treated as 1.0.0.1
 
 - A zero in the fourth part of the version number will be omitted
 
-    1.0.0.0 is treated as 1.0.0
-    1.0.01.0 is treated as 1.0.1
+    - 1.0.0.0 is treated as 1.0.0
+    - 1.0.01.0 is treated as 1.0.1
 
 This normalization does not affect the version numbers in the packages themselves; it affects only how NuGet matches versions.
 
